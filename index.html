@@ -1,0 +1,61 @@
+><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="ui-layer">
+            <div id="score-board">
+                <span>❤️ Love Meter: </span>
+                <div class="progress-bar">
+                    <div id="love-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="start-screen" class="screen active">
+            <h1>Catch the Hearts!</h1>
+            <p>Enjoy Boo!! 😘</p>
+            <button id="start-btn" class="btn">Start Game</button>
+        </div>
+
+        <div id="bridge-screen" class="screen hidden">
+            <h1>You caught my heart! 🥰 </h1>
+            <p> Can I have a question? 🥹🙏🏻 </p>
+            <div class="buttons">
+                <button id="bridge-yes-btn" class="btn yes-btn">Yes 😍</button>
+                <button id="bridge-no-btn" class="btn no-btn">No😭</button>
+            </div>
+        </div>
+
+        <div id="proposal-screen" class="screen hidden">
+            <div class="proposal-content">
+                <h1>Will You Be My Valentine?</h1>
+                <div class="buttons">
+                    <button id="yes-btn" class="btn yes-btn">Yes 😍</button>
+                    <button id="no-btn" class="btn no-btn">No 😭</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="celebration-screen" class="screen hidden">
+            <h1>I Love You So much! ❤️</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
